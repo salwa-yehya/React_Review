@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background: #e0e3ff;
+  color: #102a42;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+sup{
+  margin-left: 1rem;
+  font-size:3rem;
+  color: #ff6600;
+  
+}
+h1,h2,h3,h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  /* margin-bottom: 0.75rem; */
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  color: #617d98;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+
+  }
+  h1,h2,h3,h4 {
+    line-height: 1;
+  }
+}
+.main{
+  margin: 2rem;
+  text-align: center;
+}
+.container {
+  width: 150vw;
+  margin: 5rem;
+  /* background: #e8eaf6; */
+  max-width: 460px;
+  border-radius: 2rem;
+  padding:1.5rem 2rem ;
+  box-shadow: 0 5px 15px #28496666;
+}
+
+.container h3 {
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+
+.container a {
+  color: #e8eaf6;
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  background: #ff6600;
+  margin: 0.5rem auto 0 auto;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 5px #000000;
+}
+
+.error_page {
+  color: #283593;
+  background: #e8eaf6;
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  text-align: start;
+}
+.card img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px #0000001a;  
+
+}
+.card h4 {
+  font-weight: 800;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 0rem;
+}
+
+div.details {
+  margin-left: 20px;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ border-color: rgb(231, 165, 153);
+  background: none;
+  border:none;
+  height: 48px;
+  padding: 0 16px 0 16px;
+  letter-spacing: .25px;
+  border-radius: 24px;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+  }
+  
+  .mdi {
+    margin-right: 8px;
+  }
+}
+
+.btn-delete {
+  font-size: 16px;
+  color: red;
+  
+  >.mdi-delete-empty {
+    display: none;
+  }
+  
+  &:hover {
+    background-color: lighten(red, 48%);
+    
+    >.mdi-delete-empty {
+      display: block;
+    }
+    
+    >.mdi-delete {
+      display: none;
+    }
+  }
+  
+
+  
+  &:focus {
+    box-shadow: 0 0 0 4px lighten(red, 40%);
+  }
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+.underline {
+  width: 7.5rem;
+  height: 0.25rem;
+  margin-top: .5rem;
+  background:  #102a42;
+  margin-left: auto;
+  margin-right: auto;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.save-btn{
+  background-color: #008CBA;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.error-massege{
+  text-align: start;
+  color: red;
+}
